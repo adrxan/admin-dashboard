@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,200,1,0" />
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="stylesheet" href="https://unpkg.com/@vectopus/atlas-icons/style.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -14,52 +15,28 @@
     <div class="page-wrapper">
         <div class="sidebar">
             <div class="logo">
-                <h1><span class="material-symbols-outlined">
-                        space_dashboard
-                    </span>Dashboard</h1>
+                <h1><i class="at-website"></i>Dashboard</h1>
             </div>
             <nav class="nav-menu">
                 <ul class="nav-list">
-                    <li class="nav-item"><a href="#"><span class="material-symbols-outlined">
-                                home
-                            </span>Home</a></li>
-                    <li class="nav-item"><a href="#"><span class="material-symbols-outlined">
-                                account_circle
-                            </span>Profile</a></li>
-                    <li class="nav-item"><a href="#"><span class="material-symbols-outlined">
-                                mail
-                            </span>Messages</a></li>
-                    <li class="nav-item"><a href="#"><span class="material-symbols-outlined">
-                                schedule
-                            </span>History</a></li>
-                    <li class="nav-item"><a href="#"><span class="material-symbols-outlined">
-                                task
-                            </span>Tasks</a></li>
-                    <li class="nav-item"><a href="#"><span class="material-symbols-outlined">
-                                group
-                            </span>Communities</a></li>
+                    <li class="nav-item" id="current-page"><a href="#"><i class="at-home"></i>Home</a></li>
+                    <li class="nav-item"><a href="#"><i class="at-account"></i>Profile</a></li>
+                    <li class="nav-item"><a href="#"><i class="at-chat-dots"></i>Messages</a></li>
+                    <li class="nav-item"><a href="#"><i class="at-clock-time"></i>History</a></li>
+                    <li class="nav-item"><a href="#"><i class="at-check-file"></i>Tasks</a></li>
+                    <li class="nav-item"><a href="#"><i class="at-team-group"></i>Communities</a></li>
                 </ul>
                 <ul class="nav-list nav-bottom">
-                    <li class="nav-item"><a href="#"><span class="material-symbols-outlined">
-                                settings
-                            </span>Settings</a></li>
-                    <li class="nav-item"><a href="#"><span class="material-symbols-outlined">
-                                help
-                            </span>Support</a></li>
-                    <li class="nav-item"><a href="#"><span class="material-symbols-outlined">
-                                encrypted
-                            </span>Privacy</a></li>
+                    <li class="nav-item"><a href="#"><i class="at-gear"></i>Settings</a></li>
+                    <li class="nav-item"><a href="#"><i class="at-question-chat"></i>Support</a></li>
+                    <li class="nav-item"><a href="#"><i class="at-shield-keyhole"></i>Privacy</a></li>
                 </ul>
             </nav>
         </div>
         <div class="header">
-            <div class="search"><span class="material-symbols-outlined">
-                    search
-                </span><input type="text" class="search-bar"></input></div>
+            <div class="search"><i class="at-magnifying-glass"></i><input type="text" class="search-bar"></input></div>
             <div class="user-profile">
-                <span class="material-symbols-outlined">
-                    notifications
-                </span>
+                <i class="at-bell-reminder"></i>
                 <div class="profile-img" id="current-user"><img src="pfp.jpg" alt="" /></div>
                 <h3 class="user-name">Morgan Oakley</h3>
             </div>
@@ -78,81 +55,45 @@
         </div>
         <div class="main-content">
             <div class="projects">
-                <h3 class="grid-title">Your Project</h3>
+                <h3 class="grid-title">Your Projects</h3>
                 <div class="grid-card-container">
                     <div class="grid-card">
                         <h3>Super Cool Project</h3>
                         <p>Cras mauris leo, fringilla a dui ac, hendrerit ultricies leo. Donec venenatis ex urna,
                             mattis diam fermentum a. Etiam eros ante, euismod vel urna ac.</p>
-                        <div class="card-icons"><span class="material-symbols-outlined">
-                                star
-                            </span><span class="material-symbols-outlined">
-                                visibility
-                            </span><span class="material-symbols-outlined">
-                                share
-                            </span></div>
+                        <div class="card-icons"><i class="at-bookmark-star"></i><i class="at-vision"></i><i class="at-arrow-up-from-square"></i></div>
                     </div>
                     <div class="grid-card">
                         <h3>Less Cool Project</h3>
                         <p>Praesent sodales vel orci in faucibus. Mauris consequat nibh lectus, eget euismod massa
                             varius at. In vestibulum viverra suscipit.</p>
-                        <div class="card-icons"><span class="material-symbols-outlined">
-                                star
-                            </span><span class="material-symbols-outlined">
-                                visibility
-                            </span><span class="material-symbols-outlined">
-                                share
-                            </span></div>
+                        <div class="card-icons"><i class="at-bookmark-star"></i><i class="at-vision"></i><i class="at-arrow-up-from-square"></i></div>
                     </div>
                     <div class="grid-card">
                         <h3>Impossible App</h3>
                         <p>Sed sit amet ex elit. Nulla facilisi. Mauris eu est eu lacus porttitor lobortis vitae
                             in arcu.</p>
-                        <div class="card-icons"><span class="material-symbols-outlined">
-                                star
-                            </span><span class="material-symbols-outlined">
-                                visibility
-                            </span><span class="material-symbols-outlined">
-                                share
-                            </span></div>
+                        <div class="card-icons"><i class="at-bookmark-star"></i><i class="at-vision"></i><i class="at-arrow-up-from-square"></i></div>
                     </div>
                     <div class="grid-card">
                         <h3>Easy Peasy App</h3>
                         <p>Fusce eu turpis at erat pellentesque eleifend vel sed ex. Quisque eu gravida
                             quam. Nunc rhoncus lorem dui, quis mattis
                             leo venenatis hendrerit.</p>
-                        <div class="card-icons"><span class="material-symbols-outlined">
-                                star
-                            </span><span class="material-symbols-outlined">
-                                visibility
-                            </span><span class="material-symbols-outlined">
-                                share
-                            </span></div>
+                        <div class="card-icons"><i class="at-bookmark-star"></i><i class="at-vision"></i><i class="at-arrow-up-from-square"></i></div>
                     </div>
                     <div class="grid-card">
                         <h3>Ad Blocker</h3>
                         <p>Nam efficitur mi in leo tempus, at sollicitudin ante convallis. Praesent eget
                             risus diam. Mauris vel eros non nisl
                             luctus euismod.</p>
-                        <div class="card-icons"><span class="material-symbols-outlined">
-                                star
-                            </span><span class="material-symbols-outlined">
-                                visibility
-                            </span><span class="material-symbols-outlined">
-                                share
-                            </span></div>
+                        <div class="card-icons"><i class="at-bookmark-star"></i><i class="at-vision"></i><i class="at-arrow-up-from-square"></i></div>
                     </div>
                     <div class="grid-card">
                         <h3>Money Maker</h3>
                         <p>Praesent nec nisl egestas, sodales purus in, pretium mauris. Aenean eu
                             vehicula sapien. Suspendisse a scelerisque turpis.</p>
-                        <div class="card-icons"><span class="material-symbols-outlined">
-                                star
-                            </span><span class="material-symbols-outlined">
-                                visibility
-                            </span><span class="material-symbols-outlined">
-                                share
-                            </span></div>
+                        <div class="card-icons"><i class="at-bookmark-star"></i><i class="at-vision"></i><i class="at-arrow-up-from-square"></i></div>
                     </div>
                 </div>
             </div>
