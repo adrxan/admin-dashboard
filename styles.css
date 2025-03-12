@@ -434,7 +434,8 @@ h4 {
   overflow-y: scroll;
 }
 
-.grid-side h4, .trend-text h4 {
+.grid-side h4,
+.trend-text h4 {
   margin-bottom: 4px;
 }
 
@@ -452,4 +453,3 @@ h4 {
   margin-right: 12px;
   margin-top: -2px;
 }
-
